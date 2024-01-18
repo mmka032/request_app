@@ -7,5 +7,11 @@
 </head>
 <body>
     <h1>Weather Information</h1>
+    <h2>{{weather_deta.prefecture}} {{weather_deta.date}}の天気</h2>
+    <div>{{weather_deta.image|safe}}</div>
+    <h3>{{weather_deta.weather}}</h3>
+    <p>最高気温：{{weather_deta.max}}</p>
+    <p>最低気温：{{weather_deta.min}}</p>
+    <a href='{% url "request:index" %}'>トップページに戻る</a>
 </body>
 </html>
