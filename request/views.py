@@ -7,7 +7,6 @@ def index(request):
     return render(request, 'request/index.html')
 
 def detail(request):
-    print("----------------------------------------------")
     place = request.POST["place"]
         
     weather_deta = fetch_weather(place)
